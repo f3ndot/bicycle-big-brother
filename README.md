@@ -1,4 +1,5 @@
-bicycle-big-brother
-===================
+Finally, a chance to get back at those bike thieves
+===================================================
 
-The amazing bicycle anti-theft GPS tracking product!
+Big Brother is a simple GPS device you install inside your bicycle frame, alerting you by text message and GPS + Google Maps when theft occurs.
+
