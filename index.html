@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Big Brother - The Bike Theft GPS Tracker!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Justin Bull">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="assets/css/fonts.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+<!--     <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+ -->
+</head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Big Brother</h1>
+      </div>
+    </header>
+
+
+    <div class="container main-container">
+
+      <div class="orange"></div>
+      <div class="row">
+        <div class="span12">
+          <section class="lead">
+            <img src="assets/img/badge.png" class="logo-badge">
+            <h2>Finally, a chance to get back at those bike thieves</h2>
+            <p>Big Brother is a simple GPS device you install inside your bicycle frame, alerting you by text message and GPS + Google Maps when theft occurs.</p>
+            <p><button id="donate" class="btn btn-large btn-primary" rel="popover" title="Thanks! But I'm not ready!" data-content="<p>I'm tickled pink you're interested in funding the project, but I'm not even at that point yet!</p><br><p><strong>Perhaps subscribe instead?</strong></p>">Help Fund The Project!</button></p>
+          </section>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span12">
+          <section class="sink subscribe">
+            <h3>Wowzer! Keep me up to date on the project status!</h3>
+            <div class="alert alert-error" style="display:none;">
+              <button type="button" class="close" data-dismiss="alert">×</button>
+              <strong>Are you a little sleepy?</strong> Best check yo'self before you wreck yo'self!
+            </div>
+            <form class="form-inline" action="http://justinbull.us5.list-manage1.com/subscribe/post?u=5bbbc8695894234b7005c59a7&amp;id=81420a22f1" method="post" novalidate>
+              <input type="email" value="" name="EMAIL" class="input-large" placeholder="Email">
+              <input type="submit" value="Subscribe" name="subscribe" class="btn">
+              <span class="label">I guarantee to never sell or give away your email</span>
+            </form>
+          </section>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+    <footer>
+      <p>A project lovingly brought to you by <a href="http://www.twitter.com/f3ndot" target="_blank">@f3ndot</a></p>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $(function () {
+        $('#donate').popover()
+
+        $('input[type="submit"]').click(function (e) {
+
+          if($('input[type="email"]').val() == '' || $('input[type="email"]').val() == 'Email') {
+            e.preventDefault()
+            $('.alert').slideDown()
+            return
+          }
+
+          $(this).val('Subscribing...')
+          $(this).addClass('disabled')
+        })
+      })
+    </script>
+
+  </body>
+</html>
